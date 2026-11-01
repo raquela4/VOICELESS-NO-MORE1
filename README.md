@@ -846,5 +846,131 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 </script>
 
+<!-- VOICELESS NO MORE - Contact Section -->
+<style>
+.contact-section {
+  direction: rtl;
+  padding: 65px 20px;
+  background: #101722;
+  color: #eee9df;
+  font-family: Vazirmatn, sans-serif;
+}
+.contact-container {
+  max-width: 680px;
+  margin: auto;
+  background: #182331;
+  border: 1px solid #354354;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 15px 40px #0005;
+}
+.contact-heading {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.contact-heading h2 {
+  color: #d7c5a3;
+  font-size: 27px;
+}
+.contact-heading p {
+  color: #b6c0cb;
+  line-height: 2;
+}
+.contact-form label {
+  display: block;
+  margin: 18px 0 8px;
+  color: #d7c5a3;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  border-radius: 9px;
+  border: 1px solid #455568;
+  background: #101722;
+  color: white;
+  font: inherit;
+  outline: none;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #c9ae80;
+}
+.contact-form textarea {
+  min-height: 145px;
+  resize: vertical;
+}
+.contact-form button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 14px;
+  border: none;
+  border-radius: 9px;
+  background: #c9ae80;
+  color: #17202c;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background: #dfcba8;
+}
+.contact-note {
+  color: #aab5c1;
+  font-size: 12px;
+  line-height: 2;
+  margin-top: 18px;
+}
+</style>
+
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <div class="contact-heading">
+      <h2>صدای تو شنیده می‌شود</h2>
+      <p>
+        اگر تجربه‌ای برای بیان کردن، پرسشی یا حرفی برای گفتن داری،
+        می‌توانی از این طریق با تیم VOICELESS NO MORE ارتباط بگیری.
+      </p>
+    </div>
+
+    <form class="contact-form"
+          action="YOUR_FORMSPREE_ENDPOINT"
+          method="POST">
+
+      <label for="fullname">نام و نام خانوادگی</label>
+      <input id="fullname" name="name"
+             type="text" required maxlength="100"
+             autocomplete="name"
+             placeholder="نام کامل شما">
+
+      <label for="email">آدرس ایمیل</label>
+      <input id="email" name="email"
+             type="email" required maxlength="150"
+             autocomplete="email"
+             placeholder="example@email.com">
+
+      <label for="subject">موضوع پیام</label>
+      <input id="subject" name="subject"
+             type="text" required maxlength="150"
+             placeholder="موضوع پیام شما">
+
+      <label for="message">پیام شما</label>
+      <textarea id="message" name="message"
+                required maxlength="3000"
+                placeholder="حرف‌هایت را اینجا بنویس..."></textarea>
+
+      <button type="submit">ارسال پیام</button>
+
+      <p class="contact-note">
+        اطلاعات واردشده برای دریافت و پاسخ‌گویی به پیام استفاده می‌شود
+        و در سایت به‌صورت عمومی نمایش داده نخواهد شد.
+        لطفاً اطلاعات بسیار حساس، مدارک هویتی یا اطلاعات اشخاص دیگر را ارسال نکنید.
+        این پروژه خدمات اورژانسی یا مشاوره تخصصی ارائه نمی‌دهد.
+      </p>
+    </form>
+  </div>
+</section>
+
 </body>
 </html>
